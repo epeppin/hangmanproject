@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#playArea h1{
+    margin-bottom: 20px;
+}
+
+.newGame, #galHead, #galBod,#galLLeg, #galRLeg, #galLArm,#galFull, #win, #lose {
+    display: none;
+}
+
+h3#win {
+    color: green;
+}
+h3#lose {
+    color: darkred;
+}
+
+#wordArea {
+    margin-top: 200px;
+}
+
+#word {
+    font-size: 75px;
+}
+
+.disabled {
+    background-color: grey;
+}

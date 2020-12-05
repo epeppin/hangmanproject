@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Eric's Hangman Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+    <div id="playArea" class="container px-lg-5">
+        <h1>H-A-N-G-M-A-N</h1>
+        <h3 id="lose">Sorry You Lost!</h3>
+        <h3 id="win">You win!</h3>
+        <button class="btn btn-primary newGame">New Game</button>
+        <div class="row mx-lg-n5">
+            <div id="wordArea" class="col py-3 px-lg-5"><span id="word"></span></div>
+            <div class="col py-3 px-lg-5">
+                <img src="img/gallows_empty.png" alt="empty gallows" width="500" height="405" id="galEmp">
+                <img src="img/gallows_head.png" alt="gallows with Head" width="500" height="405" id="galHead">
+                <img src="img/gallows_body.png" alt="gallows with Head and body" width="500" height="405" id="galBod">
+                <img src="img/gallows_left_leg.png" alt="gallows with Head, body and left leg" width="500" height="405"
+                     id="galLLeg">
+                <img src="img/gallows_rightleg.png" alt="gallows with Head, body, left leg, and right leg" width="500"
+                     height="405" id="galRLeg">
+                <img src="img/gallow_leftarm.png" alt="gallows with Head, body, left leg, right leg, and left arm"
+                     width="500" height="405" id="galLArm">
+                <img src="img/gallows_rightarm.png" alt="gallows with full body, end of game" width="500" height="405"
+                     id="galFull">
+
+            </div>
+        </div>
+        <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5">
+                <button type="button" class="btn btn-primary letter" data-letter="A">A</button>
+                <button type="button" class="btn btn-primary letter" data-letter="B">B</button>
+                <button type="button" class="btn btn-primary letter" data-letter="C">C</button>
+                <button type="button" class="btn btn-primary letter" data-letter="D">D</button>
+                <button type="button" class="btn btn-primary letter" data-letter="E">E</button>
+                <button type="button" class="btn btn-primary letter" data-letter="F">F</button>
+                <button type="button" class="btn btn-primary letter" data-letter="G">G</button>
+                <button type="button" class="btn btn-primary letter" data-letter="H">H</button>
+                <button type="button" class="btn btn-primary letter" data-letter="I">I</button>
+                <button type="button" class="btn btn-primary letter" data-letter="J">J</button>
+                <button type="button" class="btn btn-primary letter" data-letter="K">K</button>
+                <button type="button" class="btn btn-primary letter" data-letter="L">L</button>
+                <button type="button" class="btn btn-primary letter" data-letter="M">M</button>
+                <button type="button" class="btn btn-primary letter" data-letter="N">N</button>
+                <button type="button" class="btn btn-primary letter" data-letter="O">O</button>
+                <button type="button" class="btn btn-primary letter" data-letter="P">P</button>
+                <button type="button" class="btn btn-primary letter" data-letter="Q">Q</button>
+                <button type="button" class="btn btn-primary letter" data-letter="R">R</button>
+                <button type="button" class="btn btn-primary letter" data-letter="S">S</button>
+                <button type="button" class="btn btn-primary letter" data-letter="T">T</button>
+                <button type="button" class="btn btn-primary letter" data-letter="U">U</button>
+                <button type="button" class="btn btn-primary letter" data-letter="V">V</button>
+                <button type="button" class="btn btn-primary letter" data-letter="W">W</button>
+                <button type="button" class="btn btn-primary letter" data-letter="X">X</button>
+                <button type="button" class="btn btn-primary letter" data-letter="Y">Y</button>
+                <button type="button" class="btn btn-primary letter" data-letter="Z">Z</button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
